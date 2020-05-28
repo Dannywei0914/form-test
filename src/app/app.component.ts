@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-export type EditorType = 'name' | 'profile';
+
 
 @Component({
   selector: 'app-root',
@@ -7,17 +7,7 @@ export type EditorType = 'name' | 'profile';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  editor: EditorType = 'name';
 
-  get showNameEditor() {
-    return this.editor === 'name';
-  }
 
-  get showProfileEditor() {
-    return this.editor === 'profile';
-  }
 
-  toggleEditor(type: EditorType) {
-    this.editor = type;
-  }
 }
